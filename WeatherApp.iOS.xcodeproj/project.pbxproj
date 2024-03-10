@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF28A3282BA9D9B6001C2596 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3272BA9D9B6001C2596 /* Forecast.swift */; };
+		EF28A32A2BA9D9EC001C2596 /* CurrentWeatherDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3292BA9D9EC001C2596 /* CurrentWeatherDataStore.swift */; };
+		EF28A32C2BA9DA2E001C2596 /* FiveDayForecastDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A32B2BA9DA2E001C2596 /* FiveDayForecastDataStore.swift */; };
 		EF6DAC212BA9D51C00D20048 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */; };
 		EF6DAC232BA9D51C00D20048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DAC222BA9D51C00D20048 /* ContentView.swift */; };
 		EF6DAC252BA9D51D00D20048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6DAC242BA9D51D00D20048 /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF28A3272BA9D9B6001C2596 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		EF28A3292BA9D9EC001C2596 /* CurrentWeatherDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherDataStore.swift; sourceTree = "<group>"; };
+		EF28A32B2BA9DA2E001C2596 /* FiveDayForecastDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastDataStore.swift; sourceTree = "<group>"; };
 		EF6DAC1D2BA9D51C00D20048 /* WeatherApp.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		EF6DAC222BA9D51C00D20048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +56,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF28A3242BA9D964001C2596 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EF28A3252BA9D99B001C2596 /* Weather */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EF28A3252BA9D99B001C2596 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				EF28A3262BA9D9A3001C2596 /* Models */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		EF28A3262BA9D9A3001C2596 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF28A3272BA9D9B6001C2596 /* Forecast.swift */,
+				EF28A3292BA9D9EC001C2596 /* CurrentWeatherDataStore.swift */,
+				EF28A32B2BA9DA2E001C2596 /* FiveDayForecastDataStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EF6DAC142BA9D51C00D20048 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +103,7 @@
 		EF6DAC1F2BA9D51C00D20048 /* WeatherApp.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EF28A3242BA9D964001C2596 /* Domain */,
 				EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */,
 				EF6DAC222BA9D51C00D20048 /* ContentView.swift */,
 				EF6DAC242BA9D51D00D20048 /* Assets.xcassets */,
@@ -194,7 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF28A32C2BA9DA2E001C2596 /* FiveDayForecastDataStore.swift in Sources */,
 				EF6DAC232BA9D51C00D20048 /* ContentView.swift in Sources */,
+				EF28A3282BA9D9B6001C2596 /* Forecast.swift in Sources */,
+				EF28A32A2BA9D9EC001C2596 /* CurrentWeatherDataStore.swift in Sources */,
 				EF6DAC212BA9D51C00D20048 /* WeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
