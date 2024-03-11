@@ -10,6 +10,10 @@
 		EF28A3282BA9D9B6001C2596 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3272BA9D9B6001C2596 /* Forecast.swift */; };
 		EF28A32A2BA9D9EC001C2596 /* CurrentWeatherDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3292BA9D9EC001C2596 /* CurrentWeatherDataStore.swift */; };
 		EF28A32C2BA9DA2E001C2596 /* FiveDayForecastDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A32B2BA9DA2E001C2596 /* FiveDayForecastDataStore.swift */; };
+		EF28A32F2BA9DADA001C2596 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A32E2BA9DADA001C2596 /* HTTPClient.swift */; };
+		EF28A3322BA9DB14001C2596 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3312BA9DB14001C2596 /* DataExtensions.swift */; };
+		EF28A3342BA9DB3D001C2596 /* WeatherNetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3332BA9DB3D001C2596 /* WeatherNetworkWorker.swift */; };
+		EF28A3372BA9DB99001C2596 /* WeatherNetworkWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3362BA9DB99001C2596 /* WeatherNetworkWorkerTests.swift */; };
 		EF6DAC212BA9D51C00D20048 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */; };
 		EF6DAC232BA9D51C00D20048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DAC222BA9D51C00D20048 /* ContentView.swift */; };
 		EF6DAC252BA9D51D00D20048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6DAC242BA9D51D00D20048 /* Assets.xcassets */; };
@@ -30,6 +34,10 @@
 		EF28A3272BA9D9B6001C2596 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		EF28A3292BA9D9EC001C2596 /* CurrentWeatherDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherDataStore.swift; sourceTree = "<group>"; };
 		EF28A32B2BA9DA2E001C2596 /* FiveDayForecastDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastDataStore.swift; sourceTree = "<group>"; };
+		EF28A32E2BA9DADA001C2596 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		EF28A3312BA9DB14001C2596 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		EF28A3332BA9DB3D001C2596 /* WeatherNetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNetworkWorker.swift; sourceTree = "<group>"; };
+		EF28A3362BA9DB99001C2596 /* WeatherNetworkWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNetworkWorkerTests.swift; sourceTree = "<group>"; };
 		EF6DAC1D2BA9D51C00D20048 /* WeatherApp.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		EF6DAC222BA9D51C00D20048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +75,7 @@
 		EF28A3252BA9D99B001C2596 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				EF28A32D2BA9DAB9001C2596 /* Workers */,
 				EF28A3262BA9D9A3001C2596 /* Models */,
 			);
 			path = Weather;
@@ -80,6 +89,30 @@
 				EF28A32B2BA9DA2E001C2596 /* FiveDayForecastDataStore.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EF28A32D2BA9DAB9001C2596 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				EF28A3332BA9DB3D001C2596 /* WeatherNetworkWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		EF28A3302BA9DB09001C2596 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF28A3312BA9DB14001C2596 /* DataExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF28A3352BA9DB66001C2596 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				EF28A3362BA9DB99001C2596 /* WeatherNetworkWorkerTests.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 		EF6DAC142BA9D51C00D20048 = {
@@ -103,9 +136,11 @@
 		EF6DAC1F2BA9D51C00D20048 /* WeatherApp.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EF28A3302BA9DB09001C2596 /* Extensions */,
 				EF28A3242BA9D964001C2596 /* Domain */,
 				EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */,
 				EF6DAC222BA9D51C00D20048 /* ContentView.swift */,
+				EF28A32E2BA9DADA001C2596 /* HTTPClient.swift */,
 				EF6DAC242BA9D51D00D20048 /* Assets.xcassets */,
 				EF6DAC262BA9D51D00D20048 /* Preview Content */,
 			);
@@ -123,6 +158,7 @@
 		EF6DAC302BA9D51D00D20048 /* WeatherApp.iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				EF28A3352BA9DB66001C2596 /* Workers */,
 			);
 			path = WeatherApp.iOSTests;
 			sourceTree = "<group>";
@@ -180,6 +216,7 @@
 					};
 					EF6DAC2C2BA9D51D00D20048 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 						TestTargetID = EF6DAC1C2BA9D51C00D20048;
 					};
 				};
@@ -228,8 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF28A32C2BA9DA2E001C2596 /* FiveDayForecastDataStore.swift in Sources */,
+				EF28A3342BA9DB3D001C2596 /* WeatherNetworkWorker.swift in Sources */,
 				EF6DAC232BA9D51C00D20048 /* ContentView.swift in Sources */,
+				EF28A32F2BA9DADA001C2596 /* HTTPClient.swift in Sources */,
 				EF28A3282BA9D9B6001C2596 /* Forecast.swift in Sources */,
+				EF28A3322BA9DB14001C2596 /* DataExtensions.swift in Sources */,
 				EF28A32A2BA9D9EC001C2596 /* CurrentWeatherDataStore.swift in Sources */,
 				EF6DAC212BA9D51C00D20048 /* WeatherApp.swift in Sources */,
 			);
@@ -239,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF28A3372BA9DB99001C2596 /* WeatherNetworkWorkerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +478,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RDJR39ZN2U;
@@ -446,6 +488,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dipankar.WeatherApp-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherApp.iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeatherApp.iOS";
@@ -457,6 +500,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RDJR39ZN2U;
