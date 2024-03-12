@@ -14,6 +14,7 @@
 		EF28A3322BA9DB14001C2596 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3312BA9DB14001C2596 /* DataExtensions.swift */; };
 		EF28A3342BA9DB3D001C2596 /* WeatherNetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3332BA9DB3D001C2596 /* WeatherNetworkWorker.swift */; };
 		EF28A3372BA9DB99001C2596 /* WeatherNetworkWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3362BA9DB99001C2596 /* WeatherNetworkWorkerTests.swift */; };
+		EF28A33C2BA9DD18001C2596 /* TwentyFourHourForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A33B2BA9DD18001C2596 /* TwentyFourHourForecastView.swift */; };
 		EF6DAC212BA9D51C00D20048 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */; };
 		EF6DAC232BA9D51C00D20048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DAC222BA9D51C00D20048 /* ContentView.swift */; };
 		EF6DAC252BA9D51D00D20048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6DAC242BA9D51D00D20048 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		EF28A3312BA9DB14001C2596 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
 		EF28A3332BA9DB3D001C2596 /* WeatherNetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNetworkWorker.swift; sourceTree = "<group>"; };
 		EF28A3362BA9DB99001C2596 /* WeatherNetworkWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNetworkWorkerTests.swift; sourceTree = "<group>"; };
+		EF28A33B2BA9DD18001C2596 /* TwentyFourHourForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyFourHourForecastView.swift; sourceTree = "<group>"; };
 		EF6DAC1D2BA9D51C00D20048 /* WeatherApp.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		EF6DAC222BA9D51C00D20048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,8 +77,9 @@
 		EF28A3252BA9D99B001C2596 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				EF28A32D2BA9DAB9001C2596 /* Workers */,
 				EF28A3262BA9D9A3001C2596 /* Models */,
+				EF28A32D2BA9DAB9001C2596 /* Workers */,
+				EF28A3382BA9DCA6001C2596 /* Scenes */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -113,6 +116,30 @@
 				EF28A3362BA9DB99001C2596 /* WeatherNetworkWorkerTests.swift */,
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		EF28A3382BA9DCA6001C2596 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EF28A3392BA9DCCC001C2596 /* CurrentWeather */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EF28A3392BA9DCCC001C2596 /* CurrentWeather */ = {
+			isa = PBXGroup;
+			children = (
+				EF28A33A2BA9DCD7001C2596 /* UI Components */,
+			);
+			path = CurrentWeather;
+			sourceTree = "<group>";
+		};
+		EF28A33A2BA9DCD7001C2596 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				EF28A33B2BA9DD18001C2596 /* TwentyFourHourForecastView.swift */,
+			);
+			path = "UI Components";
 			sourceTree = "<group>";
 		};
 		EF6DAC142BA9D51C00D20048 = {
@@ -269,6 +296,7 @@
 				EF6DAC232BA9D51C00D20048 /* ContentView.swift in Sources */,
 				EF28A32F2BA9DADA001C2596 /* HTTPClient.swift in Sources */,
 				EF28A3282BA9D9B6001C2596 /* Forecast.swift in Sources */,
+				EF28A33C2BA9DD18001C2596 /* TwentyFourHourForecastView.swift in Sources */,
 				EF28A3322BA9DB14001C2596 /* DataExtensions.swift in Sources */,
 				EF28A32A2BA9D9EC001C2596 /* CurrentWeatherDataStore.swift in Sources */,
 				EF6DAC212BA9D51C00D20048 /* WeatherApp.swift in Sources */,
