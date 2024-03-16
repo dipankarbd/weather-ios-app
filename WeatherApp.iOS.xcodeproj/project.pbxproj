@@ -24,6 +24,11 @@
 		EF28A34B2BA9DFDF001C2596 /* CurrentWeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A34A2BA9DFDF001C2596 /* CurrentWeatherPresenter.swift */; };
 		EF28A34E2BA9E090001C2596 /* WeatherNetworkWorkerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A34D2BA9E090001C2596 /* WeatherNetworkWorkerStub.swift */; };
 		EF28A3522BA9E108001C2596 /* CurrentWeatherInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3512BA9E108001C2596 /* CurrentWeatherInteractorTests.swift */; };
+		EF28A3542BA9E172001C2596 /* FiveDayForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3532BA9E172001C2596 /* FiveDayForecastModel.swift */; };
+		EF28A3562BA9E190001C2596 /* FiveDayForecastConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3552BA9E190001C2596 /* FiveDayForecastConfigurator.swift */; };
+		EF28A3582BA9E1AB001C2596 /* FiveDayForecastInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3572BA9E1AB001C2596 /* FiveDayForecastInteractor.swift */; };
+		EF28A35A2BA9E1C9001C2596 /* FiveDayForecastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3592BA9E1C9001C2596 /* FiveDayForecastPresenter.swift */; };
+		EF28A35D2BA9E25E001C2596 /* FiveDayForecastInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A35C2BA9E25E001C2596 /* FiveDayForecastInteractorTests.swift */; };
 		EF6DAC212BA9D51C00D20048 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */; };
 		EF6DAC232BA9D51C00D20048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DAC222BA9D51C00D20048 /* ContentView.swift */; };
 		EF6DAC252BA9D51D00D20048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6DAC242BA9D51D00D20048 /* Assets.xcassets */; };
@@ -58,6 +63,11 @@
 		EF28A34A2BA9DFDF001C2596 /* CurrentWeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherPresenter.swift; sourceTree = "<group>"; };
 		EF28A34D2BA9E090001C2596 /* WeatherNetworkWorkerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNetworkWorkerStub.swift; sourceTree = "<group>"; };
 		EF28A3512BA9E108001C2596 /* CurrentWeatherInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherInteractorTests.swift; sourceTree = "<group>"; };
+		EF28A3532BA9E172001C2596 /* FiveDayForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastModel.swift; sourceTree = "<group>"; };
+		EF28A3552BA9E190001C2596 /* FiveDayForecastConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastConfigurator.swift; sourceTree = "<group>"; };
+		EF28A3572BA9E1AB001C2596 /* FiveDayForecastInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastInteractor.swift; sourceTree = "<group>"; };
+		EF28A3592BA9E1C9001C2596 /* FiveDayForecastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastPresenter.swift; sourceTree = "<group>"; };
+		EF28A35C2BA9E25E001C2596 /* FiveDayForecastInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastInteractorTests.swift; sourceTree = "<group>"; };
 		EF6DAC1D2BA9D51C00D20048 /* WeatherApp.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		EF6DAC222BA9D51C00D20048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,6 +180,10 @@
 		EF28A33F2BA9DE6A001C2596 /* FiveDayForecast */ = {
 			isa = PBXGroup;
 			children = (
+				EF28A3532BA9E172001C2596 /* FiveDayForecastModel.swift */,
+				EF28A3552BA9E190001C2596 /* FiveDayForecastConfigurator.swift */,
+				EF28A3572BA9E1AB001C2596 /* FiveDayForecastInteractor.swift */,
+				EF28A3592BA9E1C9001C2596 /* FiveDayForecastPresenter.swift */,
 				EF28A3402BA9DE8E001C2596 /* FiveDayForecastView.swift */,
 			);
 			path = FiveDayForecast;
@@ -186,6 +200,7 @@
 		EF28A34F2BA9E0BE001C2596 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EF28A35B2BA9E246001C2596 /* FiveDayForecast */,
 				EF28A3502BA9E0E7001C2596 /* CurrentWeather */,
 			);
 			path = Scenes;
@@ -197,6 +212,14 @@
 				EF28A3512BA9E108001C2596 /* CurrentWeatherInteractorTests.swift */,
 			);
 			path = CurrentWeather;
+			sourceTree = "<group>";
+		};
+		EF28A35B2BA9E246001C2596 /* FiveDayForecast */ = {
+			isa = PBXGroup;
+			children = (
+				EF28A35C2BA9E25E001C2596 /* FiveDayForecastInteractorTests.swift */,
+			);
+			path = FiveDayForecast;
 			sourceTree = "<group>";
 		};
 		EF6DAC142BA9D51C00D20048 = {
@@ -353,12 +376,16 @@
 				EF28A3452BA9DF71001C2596 /* CurrentWeatherModel.swift in Sources */,
 				EF28A32C2BA9DA2E001C2596 /* FiveDayForecastDataStore.swift in Sources */,
 				EF28A3342BA9DB3D001C2596 /* WeatherNetworkWorker.swift in Sources */,
+				EF28A3582BA9E1AB001C2596 /* FiveDayForecastInteractor.swift in Sources */,
 				EF28A34B2BA9DFDF001C2596 /* CurrentWeatherPresenter.swift in Sources */,
 				EF6DAC232BA9D51C00D20048 /* ContentView.swift in Sources */,
 				EF28A32F2BA9DADA001C2596 /* HTTPClient.swift in Sources */,
 				EF28A3282BA9D9B6001C2596 /* Forecast.swift in Sources */,
 				EF28A3492BA9DFBF001C2596 /* CurrentWeatherInteractor.swift in Sources */,
 				EF28A3472BA9DF99001C2596 /* CurrentWeatherConfigurator.swift in Sources */,
+				EF28A3542BA9E172001C2596 /* FiveDayForecastModel.swift in Sources */,
+				EF28A3562BA9E190001C2596 /* FiveDayForecastConfigurator.swift in Sources */,
+				EF28A35A2BA9E1C9001C2596 /* FiveDayForecastPresenter.swift in Sources */,
 				EF28A33C2BA9DD18001C2596 /* TwentyFourHourForecastView.swift in Sources */,
 				EF28A3322BA9DB14001C2596 /* DataExtensions.swift in Sources */,
 				EF28A32A2BA9D9EC001C2596 /* CurrentWeatherDataStore.swift in Sources */,
@@ -373,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF28A35D2BA9E25E001C2596 /* FiveDayForecastInteractorTests.swift in Sources */,
 				EF28A3522BA9E108001C2596 /* CurrentWeatherInteractorTests.swift in Sources */,
 				EF28A3372BA9DB99001C2596 /* WeatherNetworkWorkerTests.swift in Sources */,
 				EF28A34E2BA9E090001C2596 /* WeatherNetworkWorkerStub.swift in Sources */,

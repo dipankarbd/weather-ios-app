@@ -7,9 +7,27 @@
 
 import SwiftUI
 
+protocol FiveDayForecastViewProtocol {
+    func displayForecast(viewModel: FiveDayForecast.LoadForecast.ViewModel) async
+}
+
+extension FiveDayForecastView: FiveDayForecastViewProtocol {
+    func displayForecast(viewModel: FiveDayForecast.LoadForecast.ViewModel) async {
+        data.forecasts = viewModel.forecast
+    }
+     
+    func fetchForecast() async {
+        let request = FiveDayForecast.LoadForecast.Request(city: city)
+        await interactor?.loadForecast(request: request)
+    }
+}
+
+  
+@MainActor
 struct FiveDayForecastView: View {
     let city: String
     
+    var interactor: FiveDayForecastInteractorProtocol?
     @ObservedObject var data = FiveDayForecastDataStore()
     
     var body: some View {
@@ -26,6 +44,8 @@ struct FiveDayForecastView: View {
                 }
             }.padding(.horizontal)
             Spacer()
+        }.task {
+            await fetchForecast()
         }
     }
 }

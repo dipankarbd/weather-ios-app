@@ -47,7 +47,7 @@ struct CurrentWeatherView: View {
             }
             .foregroundStyle(.white)
             .navigationDestination(for: String.self) { city in
-                FiveDayForecastView(city: city)
+                FiveDayForecastView(city: city).configureView()
             }
         }
         .task {
