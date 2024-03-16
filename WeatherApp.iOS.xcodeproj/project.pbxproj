@@ -17,6 +17,7 @@
 		EF28A33C2BA9DD18001C2596 /* TwentyFourHourForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A33B2BA9DD18001C2596 /* TwentyFourHourForecastView.swift */; };
 		EF28A33E2BA9DE13001C2596 /* TodaysWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A33D2BA9DE13001C2596 /* TodaysWeatherView.swift */; };
 		EF28A3412BA9DE8E001C2596 /* FiveDayForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3402BA9DE8E001C2596 /* FiveDayForecastView.swift */; };
+		EF28A3432BA9DEFE001C2596 /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A3422BA9DEFE001C2596 /* CurrentWeatherView.swift */; };
 		EF6DAC212BA9D51C00D20048 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */; };
 		EF6DAC232BA9D51C00D20048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DAC222BA9D51C00D20048 /* ContentView.swift */; };
 		EF6DAC252BA9D51D00D20048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6DAC242BA9D51D00D20048 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		EF28A33B2BA9DD18001C2596 /* TwentyFourHourForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyFourHourForecastView.swift; sourceTree = "<group>"; };
 		EF28A33D2BA9DE13001C2596 /* TodaysWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysWeatherView.swift; sourceTree = "<group>"; };
 		EF28A3402BA9DE8E001C2596 /* FiveDayForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastView.swift; sourceTree = "<group>"; };
+		EF28A3422BA9DEFE001C2596 /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 		EF6DAC1D2BA9D51C00D20048 /* WeatherApp.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6DAC202BA9D51C00D20048 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		EF6DAC222BA9D51C00D20048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				EF28A33A2BA9DCD7001C2596 /* UI Components */,
+				EF28A3422BA9DEFE001C2596 /* CurrentWeatherView.swift */,
 			);
 			path = CurrentWeather;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				EF28A3322BA9DB14001C2596 /* DataExtensions.swift in Sources */,
 				EF28A32A2BA9D9EC001C2596 /* CurrentWeatherDataStore.swift in Sources */,
 				EF6DAC212BA9D51C00D20048 /* WeatherApp.swift in Sources */,
+				EF28A3432BA9DEFE001C2596 /* CurrentWeatherView.swift in Sources */,
 				EF28A3412BA9DE8E001C2596 /* FiveDayForecastView.swift in Sources */,
 				EF28A33E2BA9DE13001C2596 /* TodaysWeatherView.swift in Sources */,
 			);
